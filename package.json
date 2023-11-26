@@ -13,7 +13,7 @@
     "webhook": "lt -p 5000 -s emailsymernsmartapp"
   },
   "engines": {
-    "node": "14.7.0"
+    "node": "18.17.1"
   },
   "author": "Ishan Varshney",
   "license": "ISC",
