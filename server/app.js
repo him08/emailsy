@@ -21,6 +21,8 @@ connectDB()
 app.use(express.json())
 app.use(cookieSession({
  maxAge:30 * 24 * 60 * 60 * 1000,
+ httpOnly: false,
+ domain: 'emailsy.vercel.app',
  keys:[keys.CookieKey]
 }))
 app.use(passport.initialize())
