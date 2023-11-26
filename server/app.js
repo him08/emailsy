@@ -12,6 +12,10 @@ const authRoutes=require('./routes/auth')
 const paymentRoutes=require('./routes/payment')
 const surveyRoutes=require('./routes/survey')
 const helpers= require('./services/sendEmail')
+const cors = require('cors')
+app.use(cors({
+  origin: '*'
+}))
 //connect to database
 connectDB()
 app.use(express.json())

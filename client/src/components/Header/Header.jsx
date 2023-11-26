@@ -14,12 +14,12 @@ const Header = () => {
    case null:
     return;
     case false:
-     return <li><a href="/api/auth/google">Login With Google</a></li>
+     return <li><a href={`${process.env.REACT_APP_BACKEND_URL}/api/auth/google`}>Login With Google</a></li>
      default:
       return [
         <li key="1"><Payment/></li>,
         <li key="2" style={{margin:"0 10px"}}>Credits: {auth?.credits}</li>,
-      <li key="3"><a onClick={clearCookies} href="/api/auth/google/logout">Logout</a></li>
+      <li key="3"><a onClick={clearCookies} href={`${process.env.REACT_APP_BACKEND_URL}/api/auth/google/logout`}>Logout</a></li>
     ]
   }
  }

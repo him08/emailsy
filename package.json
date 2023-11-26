@@ -21,6 +21,7 @@
     "@sendgrid/helpers": "^7.4.2",
     "@sendgrid/mail": "^7.4.2",
     "cookie-session": "^1.4.0",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "handlebars": "^4.7.8",
